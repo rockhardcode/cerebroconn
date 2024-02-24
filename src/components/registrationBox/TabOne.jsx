@@ -2,11 +2,6 @@ import { useState } from "react";
 import Button from '@mui/material/Button';
 import "./TabOne.css"
 import PropTypes from 'prop-types';
-// {
-//     categoryName: "Non-AMASI Members",
-//     currency: "INR",
-//     amount: "12980"
-// },
 
 const TabOne = ({category, handleChange, handleAmount}) => {
     const [selectedCheckbox, setSelectedCheckbox] = useState('');

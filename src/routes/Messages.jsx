@@ -1,8 +1,10 @@
-function Messages () {
-    return (
-        <>
-        <h1>This is home</h1>
-        </>
-    )
-    }
-    export default Messages
+import Navbar from "../components/Navbar";
+
+function Messages() {
+  return (
+    <>
+      <Navbar />
+    </>
+  );
+}
+export default Messages;

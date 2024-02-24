@@ -1,6 +1,5 @@
 import { Component } from "react";
 import "./NavbarStyles.css";
-// import {Link} from "react-router-dom"
 import { Menuitems } from "./Menuitems";
 import { Link } from "react-router-dom";
 

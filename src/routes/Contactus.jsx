@@ -1,8 +1,10 @@
-function Contactus () {
-return (
+import Navbar from "../components/Navbar";
+
+function Contactus() {
+  return (
     <>
-    <h1>This is home</h1>
+      <Navbar />
     </>
-)
+  );
 }
-export default Contactus
+export default Contactus;
