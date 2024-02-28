@@ -12,7 +12,7 @@ const TabThree = ({formValue, amount, category, handleChange}) => {
     var options = {
         key: process.env.REACT_APP_KEY,
         key_secreat: process.env.REACT_APP_SKEY,
-        amount: selectedAmount.amount,
+        amount: `${selectedAmount.amount}.00`,
         currency: "INR",
         name: "CerebroCon",
         description: "thank you",
