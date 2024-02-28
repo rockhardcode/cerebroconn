@@ -71,19 +71,19 @@ const Welcome = () => {
           </p>
         </div>
         <div className="committee-container">
-            <h2>Organising Committee</h2>
-            <div className="profile-container">
-              {committeeMem.map((item) => {
-                return (
-                  <div key={item.name}>
-                    <img className="profile-image" src={item.image} />
-                    <h3>{item.name}</h3>
-                    <h6>{item.position}</h6>
-                  </div>
-                );
-              })}
-            </div>
+          <h2>Organising Committee</h2>
+          <div className="profile-container">
+            {committeeMem.map((item) => {
+              return (
+                <div key={item.name}>
+                  <img className="profile-image" src={item.image} />
+                  <h3>{item.name}</h3>
+                  <h6>{item.position}</h6>
+                </div>
+              );
+            })}
           </div>
+        </div>
       </div>
     </div>
   );

@@ -4,16 +4,15 @@ import "./TabThree.css"
 const TabThree = ({formValue, amount, category, handleChange}) => {
   // State to hold the data
   const selectedAmount = category.find((item) => { return item.categoryName === amount})
- console.log(formValue, 'formValue')
  const handleBack = () => {
     handleChange('2')
  }
  const handleSubmit = (e) => {
     e.preventDefault()
     var options = {
-        key: "fgsfdgsdfg",
-        key_secreat: "dfgsdfgdfgdfg",
-        amount: 100,
+        key: process.env.REACT_APP_KEY,
+        key_secreat: process.env.REACT_APP_SKEY,
+        amount: selectedAmount.amount,
         currency: "INR",
         name: "CerebroCon",
         description: "thank you",
@@ -21,9 +20,9 @@ const TabThree = ({formValue, amount, category, handleChange}) => {
             alert(response.razorpay_payment_id)
         },
         prefill: {
-            name: "rakesh",
-            email: "rakesh.aksh7@gmail.com",
-            contact: "7989043818",
+            name: `${formValue.salutation} . ${formValue.firstName} ${formValue.middleName} ${formValue.lastName}`,
+            email: `${formValue.email}`,
+            contact: `${formValue.phoneNumber}`,
         },
         notes: {
             address: "razorpay office",
